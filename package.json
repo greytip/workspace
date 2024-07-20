@@ -4,6 +4,10 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": "20"
+  },
   "dependencies": {
     "@angular/animations": "~18.1.0",
     "@angular/common": "~18.1.0",
