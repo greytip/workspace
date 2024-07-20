@@ -8,4 +8,14 @@ describe('AppComponent', () => {
       imports: [AppComponent, RouterModule.forRoot([])],
     }).compileComponents();
   });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h2')?.textContent).toContain(
+      'Host app'
+    );
+  });
+
 });
