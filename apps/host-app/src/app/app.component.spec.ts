@@ -17,5 +17,4 @@ describe('AppComponent', () => {
       'Host app'
     );
   });
-
 });
